@@ -1,123 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TUGAS 1</title>
-</head>
-
     <meta charset="UTF-8">
-    <title>profil</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .navbar {
-            background-color: #ffffff;
-            padding: 10px;
-        }
-        .navbar table {
-            width: 100%;
-        }
-        .navbar a {
-            text-decoration: none;
-            color: black;
-            margin: 0 10px;
-        }
-        h2 {
-            margin-bottom: 5px;
-        }
-        .section {
-            padding: 20px;
-        }
-        .box {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-        }
-        .portfolio-img {
-            width: 350px;
-            height: 200px;
-            background-color: #ccc;
-            display: block;
-            margin: auto;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Section 1: Menu -->
-<div class="navbar">
-    <table>
-        <tr>
-            <td><strong>Brand</strong></td>
-            <td align="right">
-                <a hrefeade="#">Header</a>
-                <a href="#">Biodata</a>
-                <a href="#">Portofolio</a>
-            </td>
-        </tr>
-    </table>
-</div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand">Brand</div>
+        <ul class="nav-links">
+            <li><a href="#header">Header</a></li>
+            <li><a href="#about">Biodata</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+        </ul>
+    </nav>
 
-<!-- Section 2: Header dengan dua kolom -->
-<div class="section">
-    <table width="100%">
-        <tr>
-            <td width="50%" valign="top">
-                <h2>Selamat Datang di Website Saya</h2>
-                <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
-                <button>Pelajari Lebih Lanjut</button>
-            </td>
-            <td width="50%" align="center">
-                <img src="https://via.placeholder.com/" alt="">
-                <div class="portfolio-img">600 x 400</div>
-            </td>
-        </tr>
-    </table>
-</div>
+    <!-- Header Section -->
+    <section class="header" id="header">
+        <div class="header-text">
+            <h1>Selamat Datang di Website Saya</h1>
+            <p>Uang memang bukan segalanya tapi segalanya butuh uang.</p>
+            <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="header-img">
+            <img src="file/gambar/468977210_2473710496304334_3819609508533454754_n.jpg" alt="Foto Profil">
+        </div>
+    </section>
 
-<!-- Section 3: Biodata -->
-<div class="section" style="background-color: #f5f5f5;">
-    <h2 align="center">About Me</h2>
-    <p align="center">A brief introduction about myself</p>
-    <table width="100%" cellspacing="10">
-        <tr>
-            <td class="box">Full Name</td>
-            <td class="box">Education</td>
-            <td class="box">Pekerjaan</td>
-        </tr>
-        <tr>
-            <td class="box">Contact</td>
-            <td class="box">Hobi</td>
-            <td class="box">Alamat</td>
-        </tr>
-    </table>
-</div>
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>A brief introduction about myself</p>
+        <div class="about-grid">
+            <div><strong>Full Name:</strong> Mulyono</div>
+            <div><strong>Education:</strong> S1 Korupsi</div>
+            <div><strong>Pekerjaan:</strong>ternak mulyono</div>
+            <div><strong>Contact:</strong> mulyono@example.com</div>
+            <div><strong>Hobi:</strong> korupsi, nepotisme</div>
+            <div><strong>Alamat:</strong> solo</div>
+        </div>
+    </section>
 
-<!-- Section 4: Portofolio -->
-<div class="section">
-    <h2 align="center">Portofolio</h2>
-    <table width="100%" align="center">
-        <tr>
-            <td align="center">
-                <div class="portfolio-img">350 x 200</div>
-                <p><strong>Proyek 1</strong><br>Deskripsi proyek 1.</p>
-            </td>
-            <td align="center">
-                <div class="portfolio-img">350 x 200</div>
-                <p><strong>Proyek 2</strong><br>Deskripsi proyek 2.</p>
-            </td>
-            <td align="center">
-                <div class="portfolio-img">350 x 200</div>
-                <p><strong>Proyek 3</strong><br>Deskripsi proyek 3.</p>
-            </td>
-        </tr>
-    </table>
-</div>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>Portofolio</h2>
+        <div class="portfolio-grid">
+            <div class="card">
+                <img src="file/gambar/468876323_1226321178478869_3735503322538727483_n.jpg" alt="Proyek 1">
+                <h4>Proyek 1</h4>
+                <p>Deskripsi proyek 1.</p>
+            </div>
+            <div class="card">
+                <img src="file/gambar/468740190_1746093356171710_4047820400961834179_n.jpg" alt="Proyek 2">
+                <h4>Proyek 2</h4>
+                <p>Deskripsi proyek 2.</p>
+            </div>
+            <div class="card">
+                <img src="file/gambar/462767174_122180413016185018_1011228453557100039_n.jpg" alt="Proyek 3">
+                <h4>Proyek 3</h4>
+                <p>Deskripsi proyek 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Mulyono. All rights reserved</p>
+    </footer>
 
 </body>
 </html>
